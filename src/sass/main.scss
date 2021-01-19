@@ -1,0 +1,32 @@
+.main-nav__list{
+    display: none;
+}
+
+.main-nav--no-js .main-nav__toogle {
+    display: none;
+  }
+  
+.main-nav--no-js .main-nav__wrapper {
+    position: relative;
+  }
+
+  .main-nav--closed {
+    position: relative;
+}
+
+.main-nav--closed .main-nav__toogle {
+    background-image: url(../img/menu-cross.webp);
+    margin: 0;
+}
+
+.main-nav--closed .main-nav__list{
+    display: block;
+    margin: 0;
+    margin-top: 70px;
+    padding: 0;
+    width: 100%;
+}
+
+  .hidden{
+    display: none;
+}
