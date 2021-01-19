@@ -16,17 +16,70 @@
 
 .main-nav--closed .main-nav__toogle {
     background-image: url(../img/menu-cross.webp);
-    margin: 0;
 }
 
 .main-nav--closed .main-nav__list{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin: 0;
-    margin-top: 70px;
     padding: 0;
-    width: 100%;
+    position: absolute;
+    height: calc( 100vh - 130px);
+    width: 50vw;
+    padding-top: 70px;
 }
 
   .hidden{
     display: none;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  max-width: 100%;
+  width: 100vw;
+  background-color: #f1f1f1;
+}
+
+.container{
+  margin: 0 30px;
+}
+
+.page-header{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-top: 30px;
+
+}
+
+.page-header__logo{
+  justify-self: center;
+}
+
+.main-nav__toogle{
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-image: url(../img/menu-burger.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+}
+
+.page-header__logo-img{
+  width: 60px;
+}
+
+.page-header__contact{
+  width: 100px;
+  justify-self: end;
+  height: 30px;
+}
+
+
+.main-nav{
+  position: relative;
 }
