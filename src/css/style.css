@@ -21,27 +21,34 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
   position: absolute;
-  height: calc(100vh - 130px);
-  width: 50vw;
-  padding-top: 70px
+  height: calc(100vh - 50px);
+  width: 50vw
 }
 .hidden {
   display: none
 }
 body {
   margin: 0;
-  height: 100vh;
   max-width: 100%;
   width: 100vw;
-  background-color: #f1f1f1
+  background-color: #f1f1f1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
 }
 .container {
-  margin: 0 30px
+  margin: 0 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100vh
+}
+.container--gallery {
+  height: auto
 }
 .page-header {
   width: 100%;
@@ -51,11 +58,14 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
-  padding-top: 30px
+  height: 15vh
 }
 .page-header__logo {
   -ms-grid-column-align: center;
-  justify-self: center
+  justify-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center
 }
 .main-nav__toogle {
   position: absolute;
@@ -64,7 +74,8 @@ body {
   background-image: url(../img/menu-burger.webp);
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 10
+  z-index: 10;
+  top: 40px
 }
 .page-header__logo-img {
   width: 60px
@@ -73,8 +84,30 @@ body {
   width: 100px;
   -ms-grid-column-align: end;
   justify-self: end;
-  height: 30px
+  height: 30px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center
 }
 .main-nav {
   position: relative
+}
+.page-main {
+  height: calc(85vh - 60px);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.foto-item {
+  width: 15vw
+}
+.page-main--gallery {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
 }
